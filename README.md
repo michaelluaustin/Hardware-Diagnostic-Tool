@@ -31,8 +31,8 @@ Both the analyzer and the plotter exit with an error message and exit code 1 if 
 ## Setup
 
 ```bash
-git clone <repo-url>
-cd hardware-diagnostic
+git clone https://github.com/michaelluaustin/Hardware-Diagnostic-Tool.git
+cd Hardware-Diagnostic-Tool
 python3 -m venv .venv
 source .venv/bin/activate
 pip install psutil matplotlib
