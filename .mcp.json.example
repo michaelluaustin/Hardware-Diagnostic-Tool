@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "hardware-diagnostics": {
+      "type": "stdio",
+      "command": "/path/to/Hardware-Diagnostic-Tool/.venv/bin/python",
+      "args": [
+        "/path/to/Hardware-Diagnostic-Tool/mcp_server.py"
+      ],
+      "env": {}
+    }
+  }
+}

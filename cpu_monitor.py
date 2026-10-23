@@ -73,10 +73,10 @@ def main():
                 memory_used = memory.used / (1024 ** 3)
                 writer.writerow([timestamp, cpu_percent, memory_percent, memory_available_gib, memory_total_gib, memory_used])
                 # CPU Usage threshold warning
-                if cpu_percent > args.cpu_threshold:
+                if cpu_percent >= args.cpu_threshold:
                     print(f"Warning: CPU Usage is at {cpu_percent}% (Threshold: {args.cpu_threshold}%)")
                 # Memory Usage threshold warning
-                if memory_percent > args.memory_threshold:
+                if memory_percent >= args.memory_threshold:
                     print(f"Warning: Memory Usage is at {memory_percent}% (Threshold: {args.memory_threshold}%)")
         except KeyboardInterrupt:
             # Clean exit with Ctrl-C
